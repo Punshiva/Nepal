@@ -1,0 +1,633 @@
+@import url(https://fonts.googleapis.com/css?family=Hind); /*--- Body Font --*/
+@import url(https://fonts.googleapis.com/css?family=Nobile); /*--- Heading Font --*/
+*{
+margin:0;
+border:0;
+padding:0;
+}
+body{
+background-color:#FFF;
+font-family: 'Hind', sans-serif;
+font-size: 18px;
+position:relative;
+}
+
+h1{
+font-family: 'Nobile', sans-serif;
+text-align:center;
+font-size:175%;
+color:#4A4444;
+text-transform: uppercase;
+letter-spacing: 3px;
+padding: 3px 0;	
+padding-bottom: 30px;
+}
+.trek-info h1 {
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+.trek-detail{
+    background-color:##3498DB; 
+}
+
+.trektext{
+    color: black;
+}
+
+
+
+
+h3{
+font-family: 'Nobile', sans-serif;
+text-align:center;
+font-size:175%;
+color:#4A4444;
+text-transform: uppercase;
+letter-spacing:1%;	
+}
+p{
+padding: 2%;
+color: #fff;
+text-align: justify;	
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+#banner-wrapper{
+	max-width: 1280px;
+	margin:0 auto;
+}
+.section{
+    position: relative;
+}
+.anchor {
+    display: block;
+    position:absolute;
+    width: 0;
+    height: 0;
+    z-index:-1;
+    top:-40px;
+    left: 0;
+    visibility: hidden;
+}
+
+
+.one-half{
+width:44%;
+float:left;
+margin: 2% 0 3% 4%;
+text-align:center; 
+}
+.one-third {
+	width: 28%;
+	float:left;
+	margin:2% 0 3% 4%;
+	text-align: center;
+}
+.left-col{
+	width: 60%;
+	float:left;
+	margin: 4% 0 4% 4%;
+}
+.sidebar{
+	width: 26%;
+	float:right;
+	margin:4% 4%;
+
+}
+.sidebar img{
+	opacity: 0.8;
+}
+.clearfix {
+	clear: both;
+	}
+/*Start Parallax Section*/
+.parallax-inner {
+	padding-top: 90px;
+	padding-bottom:3px;
+    margin-bottom: 20px;
+}
+.parallax-2{
+	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("Images/pokhara.jpg") no-repeat fixed 100%;
+	text-align: center;
+    background-size: cover;
+}
+.parallax-inner h3, .parallax-inner p{
+	color:#F1F1F1;
+    
+}
+/*End Parallax Section*/
+
+.title{
+    font-size: 30px;
+    color: white;
+}
+
+@media (max-width:997px) and (min-width:983px){
+    .parallax-inner {
+        padding-bottom: 550px;
+    }    
+}
+    
+media all and(max-width:959px) and(min-width:600px) {
+	.banner{
+		width: 100%;
+	}
+}
+@media all and(max-width:599px) and(min-width:320px) {
+	width:100%;
+}
+.skills-diagram {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 35em;
+  margin: 2em auto 2em;
+}
+.skills-diagram > dd {
+  /* Hide inner attributes */
+  display: none;
+}
+.skills-diagram dt {
+  display: inline-block;
+  vertical-align: top;
+  
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  
+  -webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+  
+  /* set defaults to skill-2 */
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+}
+
+.skills-diagram dt:hover {
+  -webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/* Support vertical mode */
+.skills-diagram-vertical dt {
+  display: block;
+  /* .25em is an equivalent to inline-block's horizontal whitespace margin */
+  margin: .25em auto;
+}
+
+/* Provide 10 different sizes */
+.skills-diagram .skill-2 {
+  width: 6em;
+  height: 2em;
+  line-height: 2em;
+  
+  background-color: rgba(201, 155, 129, .3);
+  border-color: rgba(201, 155, 129, 1);
+  color: rgba(201, 155, 129, 1);
+}
+.skills-diagram .skill-3 {
+  vertical-align: middle;
+  
+  width: 6em;
+  height: 6em;
+  line-height: 3em;
+  background-color: rgba(138, 138, 140, .3);
+  border-color: rgba(138, 138, 140, 1);
+  color: rgba(138, 138, 140, 1);
+}
+.skills-diagram .skill-4 {
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  
+  background-color: rgba(234, 112, 97, .3);
+  border-color: rgba(234, 112, 97, 1);
+  color: rgba(234, 112, 97, 1);
+}
+.skills-diagram .skill-5 {
+  vertical-align: bottom;
+
+  width: 6em;
+  height: 5em;
+  line-height: 5em;
+  background-color: rgba(109, 182, 173, .3);
+  border-color: rgba(109, 182, 173, 1);
+  color: rgba(109, 182, 173, 1);
+}
+.skills-diagram .skill-6 {
+  vertical-align: top;
+  
+  width: 6em;
+  height: 6em;
+  line-height: 6em;
+  
+  background-color: rgba(195, 192, 100, .3);
+  border-color: rgba(195, 192, 100, 1);
+  color: rgba(195, 192, 100, 1);
+}
+.skills-diagram .skill-7 {
+  width: 7em;
+  height: 7em;
+  line-height: 7em;
+  
+  background-color: rgba(214, 89, 102, .3);
+  border-color: rgba(214, 89, 102, 1);
+  color: rgba(214, 89, 102, 1);
+}
+.skills-diagram .skill-8 {
+  vertical-align: bottom;
+  
+  width: 6em;
+  height: 6em;
+  line-height: 8em;
+  background-color: rgba(46, 138, 75, .3);
+  border-color: rgba(46, 138, 75, 1);
+  color: rgba(46, 138, 75, 1);
+}
+.skills-diagram .skill-9 {
+  width: 11em;
+  height: 11em;
+  line-height: 11em;
+  
+  background-color: rgba(177, 18, 2, .3);
+  border-color: rgba(177, 18, 2, 1);
+  color: rgba(177, 18, 2, 1);
+}
+.skills-diagram .skill-10 {
+  width: 14em;
+  height: 14em;
+  line-height: 14em;
+  background-color: rgba(81, 112, 144, .3);
+  border-color: rgba(81, 112, 144, 1);
+  color: rgba(81, 112, 144, 1);
+}
+
+nav{
+width:100%;
+    background: rgba(80, 94,103,0.81);
+    height:80px;
+    position: fixed;
+    top:0;
+    z-index: 200;
+}
+
+.logo{
+    float:left;
+    width: 15%;
+    margin-left: 20px;
+    margin-top: 20px;
+    color:#fff;
+}
+
+.menu {
+    width: 80%;
+    float: right;
+    display: inline-block;
+    text-align: right;
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 1%;
+    border-right: thin solid #9e1326;
+}
+
+.menu li:last-child {
+    border: none;
+}
+.menu li:hover {
+    color:#750e1c;
+}
+.menu li a {
+    color:#fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding:0;
+}
+
+
+
+@media (max-width: 900px) {
+  .menu {
+    text-align: right;
+  }
+  .menu li {
+    display: inline-block;
+  }
+  .menu li a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
+@media (max-width: 650px) {
+  .logo {
+    width: 70%;
+  }
+
+  .menu {
+    text-align: left;
+    width: 100%;
+    margin-top: 18px;
+    background: #484b50;
+  }
+  .menu li {
+    display: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .menu li :hover {
+    background:burlywood;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .menu li a {
+    display: table;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    overflow: hidden;
+    border-bottom: thin solid #555;
+  }
+
+  .burger {
+    width: 70px;
+    height: 70px;
+    display: block;
+    background: #9e1326;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    position: absolute;
+    top: 5px;
+    right: -25px;
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+  .burger i {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .burger i:before, .burger i:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: #fff;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .burger i:before {
+    margin-top: -12px;
+  }
+  .burger i:after {
+    margin-top: 12px;
+  }
+  .burger:hover {
+    background: #750e1c;
+  }
+  .burger:hover i:before {
+    margin-top: -14px;
+  }
+  .burger:hover i:after {
+    margin-top: 14px;
+  }
+  .burger.active {
+    background: #9e1326;
+  }
+  .burger.active i {
+    background: transparent;
+  }
+  .burger.active i:before, .burger.active i:after {
+    left: -5px;
+    width: 50px;
+  }
+  .burger.active i:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 12px;
+  }
+  .burger.active i:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -12px;
+  }
+  .burger.active:hover {
+    background: #750e1c;
+  }
+  .burger.active:hover i:before, .burger.active:hover i:after {
+    width: 60px;
+    margin: 0;
+    left: -10px;
+    top: 0;
+  }
+}
+
+a{
+text-decoration: none;
+    color:#fff;
+}
+a:hover{
+    color: burlywood;
+    cursor: pointer;
+}
+
+
+.myVideo {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height:auto;
+    top:0;
+    left: 0;
+    min-height:100%;
+    background-size: cover;
+    z-index:50;
+    padding-bottom: 2em;
+}
+#banner{
+    position: relative;
+    z-index: 100;
+}
+
+/*Global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Trekking*/
+#trekking{
+    min-height: 400px;
+    background: url(Images/boudhanath-stupa.jpg) no-repeat 0 -400px;
+    text-align: center;
+    background-size: cover;
+}
+
+
+/*About section*/
+
+#about {
+    padding: 60px 0;
+    background: #3498DB;
+    text-align: center;
+    color: #fff;
+    font-family:  'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    text-rendering: optimizeLegibility;
+}
+
+.about-container {
+    max-width: 85%;
+    width: 960px;
+    margin: 0 auto;
+}
+.about-heading {
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+
+.about-text {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight:400;
+    color: currentColor;
+}
+.trek-text {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: currentColor;
+}
+.trek-heading {
+    margin:0;
+    font-size: 2.6rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.history-container{
+
+max-width:90%;
+    width: 960px;
+    margin: 0 auto;
+}
+.history-heading {
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    color:aliceblue;
+}
+.history-text {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: currentColor;
+}
+.history heading {
+    margin:0;
+    font-size: 2.6rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    color:#fff;
+}
+
+* CONTACT
+===================================================== */
+contact .fa:before{
+	display: inline-block;
+	opacity:0.7;
+}
+
+.contact li {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 1em;
+	text-align: center;
+}
+.contact p{
+	text-align: center;
+}
+.contact{
+	display: inline-block;
+	margin:0 auto;
+	padding-left: 0;
+}
+.cont{
+	text-align: center;
+	background:lightsteelblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
